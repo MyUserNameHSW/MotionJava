@@ -30,10 +30,9 @@ public class DissolveActivity extends AppCompatActivity {
         final MaterialCardView card = findViewById(R.id.card);
         MaterialButton next = findViewById(R.id.next);
         setSupportActionBar(toolbar);
-        EdgeToEdge edgeToEdge = new EdgeToEdge();
-        edgeToEdge.setUpRoot((ViewGroup) findViewById(R.id.root));
-        edgeToEdge.setUpAppBar((AppBarLayout) findViewById(R.id.app_bar), toolbar);
-        edgeToEdge.setUpScrollingContent((ViewGroup) findViewById(R.id.content));
+        EdgeToEdge.setUpRoot((ViewGroup) findViewById(R.id.root));
+        EdgeToEdge.setUpAppBar((AppBarLayout) findViewById(R.id.app_bar), toolbar);
+        EdgeToEdge.setUpScrollingContent((ViewGroup) findViewById(R.id.content));
 
         final Transition dissolve = new Dissolve();
         dissolve.addTarget(image);

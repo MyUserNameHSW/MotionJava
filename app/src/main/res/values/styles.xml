@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <style name="Theme.Motion" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:navigationBarColor" tools:ignore="NewApi">
             @color/navigationBarColor
@@ -29,5 +30,14 @@
         <item name="android:textAppearance">?attr/textAppearanceListItemSecondary</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>
+
+    <style name="Theme.Motion.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Motion.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Motion.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

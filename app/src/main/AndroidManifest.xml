@@ -9,8 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Motion">
-        <activity android:name=".demo.dissolve.DissolveActivity"
+        <activity
+            android:name=".demo.dissolve.DissolveActivity"
             android:label="@string/dissolve_label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.hsw.motionjava.intent.category.DEMO" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.hsw.motionjava.demolist.DESCRIPTION"
+                android:value="@string/dissolve_description" />
+            <meta-data
+                android:name="com.hsw.motionjava.demolist.APIS"
+                android:resource="@array/dissolve_apis" />
+        </activity>
+
+
+        <activity
+            android:name=".demo.fabtransformation.FabTransformationActivity"
+            android:label="@string/fab_transformation_label">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.hsw.motionjava.intent.category.DEMO" />
@@ -18,14 +37,14 @@
 
             <meta-data
                 android:name="com.hsw.motionjava.demolist.DESCRIPTION"
-                android:value="@string/dissolve_description" />
-
+                android:value="@string/fab_transformation_description" />
             <meta-data
                 android:name="com.hsw.motionjava.demolist.APIS"
-                android:resource="@array/dissolve_apis" />
+                android:resource="@array/fab_transformation_apis" />
         </activity>
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.Motion.CardUi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

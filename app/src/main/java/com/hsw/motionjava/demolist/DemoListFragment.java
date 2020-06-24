@@ -39,7 +39,7 @@ public class DemoListFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView demoList = view.findViewById(R.id.demo_list);
-        new EdgeToEdge().setUpScrollingContent(demoList);
+        EdgeToEdge.setUpScrollingContent(demoList);
         final DemoListAdapter adapter = new DemoListAdapter(requireContext(), new DiffCallback(), new DemoListAdapter.OnDemoSelectedListener() {
             @Override
             public void onDemoSelected(DemoBean demoBean) {

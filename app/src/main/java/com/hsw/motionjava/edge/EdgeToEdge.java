@@ -14,15 +14,13 @@ import com.hsw.motionjava.R;
  * created on: 2020/6/24 10:45 AM
  * description:
  */
-public class EdgeToEdge implements EdgeToEdgeImpl {
+public class EdgeToEdge {
 
-    @Override
-    public void setUpRoot(ViewGroup root) {
+    public static void setUpRoot(ViewGroup root) {
         root.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
     }
 
-    @Override
-    public void setUpAppBar(final AppBarLayout appBar, final Toolbar toolbar) {
+    public static void setUpAppBar(final AppBarLayout appBar, final Toolbar toolbar) {
         final int toolbarPadding = toolbar.getResources().getDimensionPixelSize(R.dimen.spacing_medium);
         appBar.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
             @Override
@@ -34,8 +32,7 @@ public class EdgeToEdge implements EdgeToEdgeImpl {
         });
     }
 
-    @Override
-    public void setUpScrollingContent(final ViewGroup scrollingContent) {
+    public static void setUpScrollingContent(final ViewGroup scrollingContent) {
         final int originalPaddingLeft = scrollingContent.getPaddingLeft();
         final int originalPaddingRight = scrollingContent.getPaddingRight();
         final int originalPaddingBottom = scrollingContent.getPaddingBottom();

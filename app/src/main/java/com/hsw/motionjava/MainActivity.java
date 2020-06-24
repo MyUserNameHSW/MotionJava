@@ -22,9 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         // Configure edge-to-edge display.
-        EdgeToEdge edgeToEdge = new EdgeToEdge();
-        edgeToEdge.setUpRoot((ViewGroup) findViewById(R.id.main));
-        edgeToEdge.setUpAppBar((AppBarLayout) findViewById(R.id.app_bar), toolbar);
+        EdgeToEdge.setUpRoot((ViewGroup) findViewById(R.id.main));
+        EdgeToEdge.setUpAppBar((AppBarLayout) findViewById(R.id.app_bar), toolbar);
 
         // Set up the fragment.
         if (savedInstanceState == null) {
