@@ -1,0 +1,2 @@
+rootProject.name='MotionJava'
+include ':app'

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MotionJava</string>
+    <string name="cheese">Cheese</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="hello_world">Hello, world!</string>
+    <string name="favorite">Favorite</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="share">Share</string>
+    <string name="next">Next</string>
+    <string name="toggle">Toggle</string>
+    <string name="detail">Detail</string>
+    <string name="order">Order</string>
+    <string name="add">Add</string>
+    <string name="tap_fab">Tap on the floating action button to expand it.</string>
+    <string name="you_selected">You selected %s.</string>
+    <string name="drag_hint">%s clicked. Long press to start dragging.</string>
+    <string name="refresh">Refresh</string>
+</resources>
