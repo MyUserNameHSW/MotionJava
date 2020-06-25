@@ -44,6 +44,22 @@
         </activity>
 
         <activity
+            android:name=".demo.fadethrough.FadeThroughActivity"
+            android:label="@string/fade_through_label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.hsw.motionjava.intent.category.DEMO" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.hsw.motionjava.demolist.DESCRIPTION"
+                android:value="@string/fade_through_description" />
+            <meta-data
+                android:name="com.hsw.motionjava.demolist.APIS"
+                android:resource="@array/fade_through_apis" />
+        </activity>
+
+        <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.Motion.CardUi">
             <intent-filter>

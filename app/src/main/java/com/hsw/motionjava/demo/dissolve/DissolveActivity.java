@@ -2,7 +2,6 @@ package com.hsw.motionjava.demo.dissolve;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.animation.PathInterpolatorCompat;
 import androidx.lifecycle.Observer;
 import androidx.transition.Transition;
 import androidx.transition.TransitionManager;
@@ -16,7 +15,6 @@ import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import com.hsw.motionjava.R;
-import com.hsw.motionjava.demolist.DemoViewModel;
 import com.hsw.motionjava.edge.EdgeToEdge;
 
 public class DissolveActivity extends AppCompatActivity {
@@ -24,7 +22,7 @@ public class DissolveActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dissolve2);
+        setContentView(R.layout.activity_dissolve);
         Toolbar toolbar  = findViewById(R.id.toolbar);
         final ImageView image = findViewById(R.id.image);
         final MaterialCardView card = findViewById(R.id.card);
