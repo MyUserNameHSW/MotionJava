@@ -81,6 +81,7 @@ public class Cheese {
         for (int i = 0; i < IMAGE_LIST.size(); i++) {
             Cheese cheese = new Cheese();
             cheese.setId(i);
+            cheese.setName(NAMES.get(i));
             cheese.setImage(IMAGE_LIST.get(i));
             cheese.setImageWidth((Integer) IMAGE_SIZES.get(i).first);
             cheese.setImageHeight((Integer) IMAGE_SIZES.get(i).second);

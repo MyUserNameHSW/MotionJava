@@ -25,6 +25,7 @@ import java.util.List;
  * @author heshuai
  * created on: 2020/6/25 6:30 PM
  * description:
+ *  TODO 存在拖动时候的闪烁问题
  */
 public class ReorderActivity extends AppCompatActivity {
 
