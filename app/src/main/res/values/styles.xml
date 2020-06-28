@@ -16,7 +16,7 @@
     </style>
 
     <style name="Theme.Motion.Translucent">
-        <item name="android:statusBarColor" tools:ignore="NewApi">@color/dark_scrim</item>
+        <item name="android:statusBarColor">@color/dark_scrim</item>
     </style>
 
     <style name="Widget.Motion.ImageView.Icon" parent="android:Widget">
