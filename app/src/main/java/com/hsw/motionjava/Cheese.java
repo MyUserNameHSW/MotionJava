@@ -1,9 +1,11 @@
 package com.hsw.motionjava;
 
+import android.content.Intent;
 import android.util.Pair;
 
 import androidx.annotation.DrawableRes;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,6 +20,8 @@ public class Cheese {
     String name;
     @DrawableRes
     int image;
+    int imageWidth;
+    int imageHeight;
 
     public Cheese() {
     }
@@ -25,6 +29,22 @@ public class Cheese {
     public Cheese(String name, int image) {
         this.name = name;
         this.image = image;
+    }
+
+    public int getImageWidth() {
+        return imageWidth;
+    }
+
+    public void setImageWidth(int imageWidth) {
+        this.imageWidth = imageWidth;
+    }
+
+    public int getImageHeight() {
+        return imageHeight;
+    }
+
+    public void setImageHeight(int imageHeight) {
+        this.imageHeight = imageHeight;
     }
 
     public long getId() {
@@ -49,6 +69,24 @@ public class Cheese {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    public static List<Cheese> getCheeseList() {
+        List<Cheese> list = new ArrayList<>();
+        for (int i = 0; i < IMAGE_LIST.size(); i++) {
+            Cheese cheese = new Cheese();
+            cheese.setId(i);
+            cheese.setImage(IMAGE_LIST.get(i));
+            cheese.setImageWidth((Integer) IMAGE_SIZES.get(i).first);
+            cheese.setImageHeight((Integer) IMAGE_SIZES.get(i).second);
+            list.add(cheese);
+        }
+        return list;
     }
 
     public static List<Integer> IMAGE_LIST = Arrays.asList(R.drawable.cheese_1,
