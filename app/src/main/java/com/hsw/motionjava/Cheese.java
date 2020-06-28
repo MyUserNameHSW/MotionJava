@@ -78,13 +78,14 @@ public class Cheese {
 
     public static List<Cheese> getCheeseList() {
         List<Cheese> list = new ArrayList<>();
-        for (int i = 0; i < IMAGE_LIST.size(); i++) {
+        for (int i = 0; i < NAMES.size(); i++) {
+            int imageIndex = ((NAMES.get(i).hashCode() % IMAGE_LIST.size()) + IMAGE_LIST.size()) % IMAGE_LIST.size();
             Cheese cheese = new Cheese();
             cheese.setId(i);
             cheese.setName(NAMES.get(i));
-            cheese.setImage(IMAGE_LIST.get(i));
-            cheese.setImageWidth((Integer) IMAGE_SIZES.get(i).first);
-            cheese.setImageHeight((Integer) IMAGE_SIZES.get(i).second);
+            cheese.setImage(IMAGE_LIST.get(imageIndex));
+            cheese.setImageWidth((Integer) IMAGE_SIZES.get(imageIndex).first);
+            cheese.setImageHeight((Integer) IMAGE_SIZES.get(imageIndex).second);
             list.add(cheese);
         }
         return list;
