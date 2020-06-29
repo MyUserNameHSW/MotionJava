@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/cheeseGridFragment"
-        android:name="com.example.android.motion.demo.sharedelement.CheeseGridFragment"
+        android:name="com.hsw.motionjava.demo.sharedelement.CheeseGridFragment"
         android:label="CheeseGridFragment">
         <action
             android:id="@+id/action_detail"
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/cheeseDetailFragment"
-        android:name="com.example.android.motion.demo.sharedelement.CheeseDetailFragment"
+        android:name="com.hsw.motionjava.demo.sharedelement.CheeseDetailFragment"
         android:label="CheeseDetailFragment">
         <argument
             android:name="cheeseId"

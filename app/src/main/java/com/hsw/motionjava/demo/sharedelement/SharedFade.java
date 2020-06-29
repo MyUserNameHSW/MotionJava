@@ -1,4 +1,4 @@
-package com.hsw.motionjava.demo.navfadethrough;
+package com.hsw.motionjava.demo.sharedelement;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.transition.Transition;
 import androidx.transition.TransitionValues;
+
+import com.hsw.motionjava.demo.navfadethrough.MirrorView;
 
 /**
  * @author heshuai

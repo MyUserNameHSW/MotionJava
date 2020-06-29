@@ -31,6 +31,7 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.hsw.motionjava.Cheese;
 import com.hsw.motionjava.Durations;
 import com.hsw.motionjava.R;
+import com.hsw.motionjava.demo.sharedelement.SharedFade;
 
 /**
  * @author heshuai
@@ -116,7 +117,7 @@ public class CheeseArticleFragment extends Fragment {
         TransitionSet transitionSet = new TransitionSet();
         transitionSet.setDuration(duration);
         transitionSet.setInterpolator(PathInterpolatorCompat.create(0.4f, 0f, 0.2f, 1f));
-        //transitionSet.addTransition(new SharedFade());
+        transitionSet.addTransition(new SharedFade());
         transitionSet.addTransition(new ChangeBounds());
         transitionSet.addTransition(new ChangeTransform().excludeTarget(noTransform, true));
         return transitionSet;
